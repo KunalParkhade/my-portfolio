@@ -12,7 +12,6 @@
   "postAttachCommand": {
     "server": "npm start"
   },
-
   // Configure tool-specific properties.
   "customizations": {
     // Configure properties specific to VS Code.
@@ -24,7 +23,7 @@
         "GitHub.copilot",
         "ms-vscode.azure-account",
         "ms-azuretools.vscode-azurestaticwebapps",
-        "oderwat.indent-rainbow",
+        "oderwat.indent-rainbow"
       ],
       "settings": {
         "emmet.includeLanguages": {
@@ -34,18 +33,15 @@
       }
     }
   },
-
   "features": {
     "ghcr.io/devcontainers/features/github-cli:1": {},
     "ghcr.io/devcontainers/features/azure-cli:1": {}
   },
-
   "portsAttributes": {
     "1234": {
       "label": "Application",
       "onAutoForward": "openPreview"
     }
   },
-
   "forwardPorts": [1234]
 }
