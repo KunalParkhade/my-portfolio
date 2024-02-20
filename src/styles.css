@@ -13,6 +13,10 @@ body {
   padding: 0;
   width: 100%;
 }
+/* add a smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
 
 div#main {
   display: flex;
@@ -122,4 +126,33 @@ a:hover {
 img.socialIcon {
   height: 30px;
   width: 30px;
+}
+
+/* add a slide in animation */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Animate scroll down arrow to bounce up and down */
+
+.scroll-down-arrow {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
 }
